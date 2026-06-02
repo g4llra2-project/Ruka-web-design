@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Viaoda+Libre&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Viaoda Libre", serif;
+  --font-sans: "Imprima", sans-serif;
+}
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0608;
+  font-family: 'Imprima', sans-serif;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes bobUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bobUp {
+  animation: bobUp 2s ease-in-out infinite;
+}
+
