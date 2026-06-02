@@ -4,10 +4,14 @@
  */
 
 export interface TranslationSchema {
-  navLinksLeft: string[];
-  navLinksRight: string[];
-  navProjects: string;
-  navContact: string;
+  navWork: string;
+  navStudio: string;
+  navProcess: string;
+  navGallery: string;
+  navContact: string; // Get In Touch button
+  projectBrief: string;
+  locationLabel: string;
+  specsLabel: string;
   pullToOpen: string;
   heroTitle: string;
   heroSubMobile: string;
@@ -24,10 +28,14 @@ export type SupportedLanguages = 'EN' | 'ID';
 
 export const TRANSLATIONS: Record<SupportedLanguages, TranslationSchema> = {
   EN: {
-    navLinksLeft: ['Projects', 'Philosophy', 'Services'],
-    navLinksRight: ['Journal', 'Contact'],
-    navProjects: 'Projects',
-    navContact: 'Contact',
+    navWork: 'Work',
+    navStudio: 'Studio',
+    navProcess: 'Process',
+    navGallery: 'Gallery',
+    navContact: 'GET IN TOUCH',
+    projectBrief: 'Project Brief',
+    locationLabel: 'Location',
+    specsLabel: 'Specifications',
     pullToOpen: 'PULL TO OPEN',
     heroTitle: 'SHAPE › THE UNBUILT',
     heroSubMobile: 'Bespoke high-end architectural systems designed by RUKA STUDIO. We transform challenging, steep elevations into custom residential sanctuaries.',
@@ -40,10 +48,14 @@ export const TRANSLATIONS: Record<SupportedLanguages, TranslationSchema> = {
     ctaParagraph: 'Bespoke high-end architectural systems, engineered for challenging topographies and curated for individuals demanding modern clarity.',
   },
   ID: {
-    navLinksLeft: ['Proyek', 'Filosofi', 'Layanan'],
-    navLinksRight: ['Jurnal', 'Kontak'],
-    navProjects: 'Proyek',
-    navContact: 'Kontak',
+    navWork: 'Karya',
+    navStudio: 'Studio',
+    navProcess: 'Proses',
+    navGallery: 'Galeri',
+    navContact: 'HUBUNGI KAMI',
+    projectBrief: 'Ringkasan Proyek',
+    locationLabel: 'Lokasi',
+    specsLabel: 'Spesifikasi',
     pullToOpen: 'TARIK UNTUK MEMBUKA',
     heroTitle: 'WUJUDKAN › YANG BELUM TERBANGUN',
     heroSubMobile: 'Sistem arsitektur mewah yang dirancang khusus oleh RUKA STUDIO. Kami mengubah tebing curam yang menantang menjadi tempat tinggal perlindungan yang menawan.',

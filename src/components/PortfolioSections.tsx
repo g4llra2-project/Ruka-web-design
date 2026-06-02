@@ -298,17 +298,17 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
       {/* 2. SERVICES SECTION */}
       <section
         id="services"
-        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative"
+        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative bg-[#FCFAF6] text-[#0B2240]"
       >
         <div className="max-w-6xl w-full flex flex-col gap-8 md:gap-12">
           <div className="text-center md:text-left max-w-3xl space-y-3">
-            <span className="text-[11px] font-mono tracking-[0.2em] text-[#c5a880] uppercase flex items-center justify-center md:justify-start gap-2">
+            <span className="text-[11px] font-mono tracking-[0.2em] text-[#A4855C] uppercase flex items-center justify-center md:justify-start gap-2">
               <Layers className="w-4 h-4" /> {t.services.title}
             </span>
-            <h2 className="font-serif text-[28px] md:text-[46px] leading-[1.1] text-white uppercase tracking-normal">
+            <h2 className="font-serif text-[28px] md:text-[46px] leading-[1.1] text-[#0B2240] uppercase tracking-normal">
               {t.services.subtitle}
             </h2>
-            <p className="font-sans text-[13px] md:text-[15px] text-white/70 leading-relaxed max-w-[580px]">
+            <p className="font-sans text-[13px] md:text-[15px] text-[#0B2240]/85 leading-relaxed max-w-[580px]">
               {t.services.intro}
             </p>
           </div>
@@ -318,21 +318,21 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
             {t.services.cards.map((card, i) => (
               <div 
                 key={i}
-                className="glass group p-5 md:p-6 rounded-[24px] border border-white/5 bg-black/35 hover:bg-black/55 hover:border-[#c5a880]/30 transition-all duration-500 flex flex-col justify-between min-h-[160px] md:min-h-[180px]"
+                className="bg-white group p-5 md:p-6 rounded-[24px] border border-[#0B2240]/10 hover:border-[#A4855C]/45 hover:shadow-[0_12px_28px_rgba(11,34,64,0.06)] transition-all duration-500 flex flex-col justify-between min-h-[160px] md:min-h-[180px]"
               >
                 <div className="flex justify-between items-start">
-                  <span className="font-mono text-[16px] text-white/20 group-hover:text-[#c5a880] transition-colors duration-400 font-semibold">
+                  <span className="font-mono text-[16px] text-[#0B2240]/20 group-hover:text-[#A4855C] transition-colors duration-400 font-semibold">
                     {card.num}
                   </span>
-                  <div className="w-6 h-6 rounded-full border border-white/10 flex items-center justify-center opacity-40 group-hover:opacity-100 group-hover:border-[#c5a880] transition-all duration-400">
-                    <ArrowRight className="w-3.5 h-3.5 text-white group-hover:text-[#c5a880] transition-colors duration-400" />
+                  <div className="w-6 h-6 rounded-full border border-[#0B2240]/10 flex items-center justify-center opacity-40 group-hover:opacity-100 group-hover:border-[#A4855C] transition-all duration-400">
+                    <ArrowRight className="w-3.5 h-3.5 text-[#0B2240]/60 group-hover:text-[#A4855C] transition-colors duration-400" />
                   </div>
                 </div>
                 <div className="space-y-2 mt-4 text-left">
-                  <h3 className="font-sans font-medium text-[13px] md:text-[14px] text-white tracking-wide group-hover:text-[#c5a880] transition-colors duration-300">
+                  <h3 className="font-sans font-medium text-[13px] md:text-[14px] text-[#0B2240] tracking-wide group-hover:text-[#A4855C] transition-colors duration-300">
                     {card.name}
                   </h3>
-                  <p className="font-sans text-[11px] md:text-[12px] text-white/50 leading-relaxed">
+                  <p className="font-sans text-[11px] md:text-[12px] text-[#0B2240]/65 leading-relaxed">
                     {card.desc}
                   </p>
                 </div>
@@ -345,19 +345,19 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
       {/* 3. PROJECTS SECTION */}
       <section
         id="projects"
-        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative"
+        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative bg-[#FCFAF6] text-[#0B2240]"
       >
         <div className="max-w-6xl w-full flex flex-col gap-6 md:gap-8 justify-center">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div className="space-y-1.5 text-left">
-              <span className="text-[11px] font-mono tracking-[0.2em] text-[#c5a880] uppercase flex items-center gap-2">
-                <Compass className="w-4 h-4 text-[#c5a880]" /> {t.projects.title}
+              <span className="text-[11px] font-mono tracking-[0.2em] text-[#A4855C] uppercase flex items-center gap-2">
+                <Compass className="w-4 h-4 text-[#A4855C]" /> {t.projects.title}
               </span>
-              <h2 className="font-serif text-[28px] md:text-[46px] leading-[1.1] text-white uppercase">
+              <h2 className="font-serif text-[28px] md:text-[46px] leading-[1.1] text-[#0B2240] uppercase">
                 {t.projects.subtitle}
               </h2>
             </div>
-            <span className="font-mono text-[9px] text-[#c5a880]/60 tracking-wider uppercase mb-1">
+            <span className="font-mono text-[9px] text-[#A4855C]/80 tracking-wider uppercase mb-1">
               ‹ {t.projects.clickTip} ›
             </span>
           </div>
@@ -376,10 +376,10 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
               return (
                 <div
                   key={bg.id}
-                  className={`glass cursor-pointer rounded-[24px] overflow-hidden border transition-all duration-500 flex flex-col text-left ${
+                  className={`cursor-pointer rounded-[24px] overflow-hidden border transition-all duration-500 flex flex-col text-left ${
                     isSelected 
-                      ? 'border-[#c5a880] shadow-[0_0_20px_rgba(197,168,128,0.25)] bg-white/5' 
-                      : 'border-white/5 hover:border-white/20 bg-black/40'
+                      ? 'border-[#A4855C] shadow-[0_12px_32px_rgba(164,133,92,0.14)] bg-white' 
+                      : 'border-[#0B2240]/10 hover:border-[#A4855C]/35 bg-white/70 hover:bg-white'
                   }`}
                   onClick={() => onBgChange(idx)}
                   style={{ minHeight: '230px' }}
@@ -391,14 +391,14 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
                       alt={name}
                       referrerPolicy="no-referrer"
                       className={`w-full h-full object-cover transition-transform duration-700 ${
-                        isSelected ? 'scale-105' : 'scale-100 group-hover:scale-108 opacity-60'
+                        isSelected ? 'scale-105' : 'scale-100 group-hover:scale-108 opacity-65'
                       }`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     
                     {/* Active Label */}
                     {isSelected && (
-                      <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#c5a880] text-black font-mono text-[8px] uppercase tracking-widest font-black shadow-[0_0_8px_rgba(197,168,128,0.6)]">
+                      <div className="absolute top-3 right-3 px-2 py-0.5 rounded-none bg-[#A4855C] text-white font-mono text-[8px] uppercase tracking-widest font-bold shadow-[0_4px_10px_rgba(164,133,92,0.3)]">
                         {lang === 'EN' ? 'ACTIVE OCULUS' : 'AKTIF OCULUS'}
                       </div>
                     )}
@@ -406,216 +406,28 @@ export default function PortfolioSections({ scrollProgress, lang, activeBgIndex,
 
                   {/* Meta Specifications content */}
                   <div className="p-4 flex-1 flex flex-col justify-between">
-                    <h3 className="font-serif text-[14px] text-white line-clamp-1 mb-1.5">
+                    <h3 className="font-serif text-[14px] text-[#0B2240] line-clamp-1 mb-1.5 font-medium">
                       {name}
                     </h3>
                     
-                    <div className="grid grid-cols-3 gap-1 border-t border-white/5 pt-2.5 font-mono text-[9px] text-white/40">
+                    <div className="grid grid-cols-3 gap-1 border-t border-[#0B2240]/10 pt-2.5 font-mono text-[9px] text-[#0B2240]/45">
                       <div>
                         <p>{t.projects.specs.year}</p>
-                        <p className="text-white/80 font-medium mt-0.5">{year}</p>
+                        <p className="text-[#0B2240]/80 font-medium mt-0.5">{year}</p>
                       </div>
                       <div>
                         <p>{t.projects.specs.area}</p>
-                        <p className="text-white/80 font-medium mt-0.5">{area}</p>
+                        <p className="text-[#0B2240]/80 font-medium mt-0.5">{area}</p>
                       </div>
                       <div className="text-right">
                         <p>{t.projects.specs.type}</p>
-                        <p className="text-[#c5a880] font-medium mt-0.5 line-clamp-1">{structure}</p>
+                        <p className="text-[#A4855C] font-semibold mt-0.5 line-clamp-1">{structure}</p>
                       </div>
                     </div>
                   </div>
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. JOURNAL SECTION */}
-      <section
-        id="journal"
-        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative"
-      >
-        <div className="max-w-5xl w-full flex flex-col gap-8 text-left">
-          <div className="space-y-1.5">
-            <span className="text-[11px] font-mono tracking-[0.2em] text-[#c5a880] uppercase flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-[#c5a880]" /> {t.journal.title}
-            </span>
-            <h2 className="font-serif text-[28px] md:text-[46px] leading-[1.1] text-white uppercase">
-              {t.journal.subtitle}
-            </h2>
-          </div>
-
-          {/* Editorial clean rows listing essays */}
-          <div className="flex flex-col border-t border-white/10">
-            {t.journal.articles.map((art, i) => (
-              <div 
-                key={i}
-                className="group flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-8 items-start py-5 md:py-7 border-b border-white/10 hover:bg-white/[0.02] px-3 transition-colors duration-300 cursor-pointer"
-              >
-                {/* Article Date & Readtime */}
-                <div className="md:col-span-3 flex items-center md:flex-col md:items-start justify-between md:justify-center gap-2 font-mono text-[10px] text-white/40">
-                  <span className="flex items-center gap-1.5">
-                    <Calendar className="w-3.5 h-3.5" /> {art.date}
-                  </span>
-                  <span className="text-[#c5a880]/70 font-semibold">{t.journal.readTime}</span>
-                </div>
-
-                {/* Title and description */}
-                <div className="md:col-span-8 space-y-1">
-                  <h3 className="font-serif text-[15px] md:text-[18px] text-white group-hover:text-[#c5a880] transition-colors duration-300">
-                    {art.title}
-                  </h3>
-                  <p className="font-sans text-[11px] md:text-[13px] text-white/50 leading-relaxed">
-                    {art.desc}
-                  </p>
-                </div>
-
-                {/* Aesthetic arrow icon */}
-                <div className="md:col-span-1 hidden md:flex items-center justify-end h-full mt-2.5">
-                  <div className="w-8 h-8 rounded-full border border-white/10 bg-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:border-[#c5a880] transition-all duration-400">
-                    <ArrowRight className="w-4 h-4 text-[#c5a880]" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. CONTACT SECTION */}
-      <section
-        id="contact"
-        className="w-full min-h-screen flex items-center justify-center px-6 md:px-12 py-24 select-none relative"
-      >
-        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
-          {/* Left info column */}
-          <div className="md:col-span-5 space-y-8 text-left">
-            <div className="space-y-2">
-              <span className="text-[11px] font-mono tracking-[0.2em] text-[#c5a880] uppercase flex items-center gap-2">
-                <Mail className="w-4 h-4 animate-pulse" /> {t.contact.title}
-              </span>
-              <h2 className="font-serif text-[28px] md:text-[42px] leading-[1.1] text-white uppercase">
-                {t.contact.subtitle}
-              </h2>
-              <p className="font-sans text-[12px] md:text-[13px] text-white/50 leading-relaxed max-w-[360px]">
-                {t.contact.instructions}
-              </p>
-            </div>
-
-            {/* Studios list details */}
-            <div className="space-y-5 border-t border-white/10 pt-6">
-              <h3 className="font-serif text-[12px] text-[#c5a880] tracking-widest uppercase">
-                {t.contact.addressTitle}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {t.contact.studios.map((st, idx) => (
-                  <div key={idx} className="space-y-1 font-sans text-[11px]">
-                    <h4 className="font-medium text-white tracking-wide">{st.city}</h4>
-                    <p className="text-white/60">{st.street}</p>
-                    <p className="text-white/45">{st.region}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Direct channels links */}
-            <div className="flex flex-wrap gap-4 pt-2 text-[11px] font-mono select-all">
-              <div className="flex items-center gap-1.5 text-white/40 hover:text-white transition-colors duration-300">
-                <Phone className="w-3.5 h-3.5 text-[#c5a880]/70" />
-                <span>+62 (370) 589-2241</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-white/40 hover:text-white transition-colors duration-300">
-                <Mail className="w-3.5 h-3.5 text-[#c5a880]/70" />
-                <span>patrons@ruka.studio</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Right minimalist custom direct form */}
-          <div className="md:col-span-7 glass p-6 md:p-8 rounded-[28px] border border-white/5 bg-black/45 backdrop-blur-md relative overflow-hidden">
-            {submitted ? (
-              /* Elegant submit success layer */
-              <div className="flex flex-col items-center justify-center p-8 text-center space-y-4 min-h-[300px]">
-                <CheckCircle className="w-12 h-12 text-[#c5a880] animate-bounce mb-2" />
-                <h3 className="font-serif text-[18px] text-white font-medium uppercase tracking-wider">
-                  {lang === 'EN' ? 'MISSION BRIEF TRANSMITTED' : 'RINGKASAN MISI DIWAKILI'}
-                </h3>
-                <p className="font-sans text-[12px] text-white/60 leading-relaxed max-w-sm">
-                  {t.contact.form.success}
-                </p>
-              </div>
-            ) : (
-              /* Strict high density interactive input forms */
-              <form onSubmit={handleSubmit} className="space-y-5 text-left">
-                <div className="space-y-1.5">
-                  <label className="block text-[9px] font-mono uppercase tracking-widest text-[#c5a880]/70">
-                    {t.contact.form.name}
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full h-10 px-4 bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.07] border border-white/10 rounded-xl font-sans text-white text-[12px] transition-all outline-none focus:border-[#c5a880]/50 placeholder-white/20"
-                    placeholder="e.g. Alexis Harrington"
-                    value={formName}
-                    onChange={(e) => setFormName(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-1.5">
-                    <label className="block text-[9px] font-mono uppercase tracking-widest text-[#c5a880]/70">
-                      {t.contact.form.email}
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full h-10 px-4 bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.07] border border-white/10 rounded-xl font-sans text-white text-[12px] transition-all outline-none focus:border-[#c5a880]/50 placeholder-white/20"
-                      placeholder="patron@gmail.com"
-                      value={formEmail}
-                      onChange={(e) => setFormEmail(e.target.value)}
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-1.5">
-                    <label className="block text-[9px] font-mono uppercase tracking-widest text-[#c5a880]/70">
-                      {t.contact.form.topo}
-                    </label>
-                    <select
-                      className="w-full h-10 px-4 bg-[#141115] border border-white/10 rounded-xl font-sans text-white text-[12px] transition-all outline-none focus:border-[#c5a880]/50 cursor-pointer"
-                      value={formTopo}
-                      onChange={(e) => setFormTopo(e.target.value)}
-                    >
-                      <option value="gentle">{t.contact.form.topoG}</option>
-                      <option value="steep">{t.contact.form.topoS}</option>
-                      <option value="extreme">{t.contact.form.topoE}</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="block text-[9px] font-mono uppercase tracking-widest text-[#c5a880]/70">
-                    {t.contact.form.message}
-                  </label>
-                  <textarea
-                    rows={4}
-                    className="w-full p-4 bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.07] border border-white/10 rounded-xl font-sans text-white text-[12px] transition-all outline-none focus:border-[#c5a880]/50 resize-none placeholder-white/20"
-                    placeholder="Share elements of structural layout, scale, region elevations..."
-                    value={formMsg}
-                    onChange={(e) => setFormMsg(e.target.value)}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full h-11 bg-gradient-to-r from-[#c5a880] to-[#bca17a] hover:from-[#d1b48b] hover:to-[#c5a880] text-black hover:shadow-[0_0_15px_rgba(197,168,128,0.35)] rounded-xl font-sans font-medium text-[11px] uppercase tracking-[0.2em] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer mt-1"
-                >
-                  <Send className="w-3.5 h-3.5" />
-                  <span>{t.contact.form.submit}</span>
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </section>

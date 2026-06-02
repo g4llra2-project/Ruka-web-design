@@ -7,7 +7,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import HeroScene from './components/HeroScene';
 import PortfolioSections from './components/PortfolioSections';
-import CtaScene from './components/CtaScene';
 import { CURTAIN_LEFT, CURTAIN_RIGHT, WORLD_BG, BACKGROUNDS } from './types';
 import { easeInOut, lerp, clamp, useIsMobile } from './utils';
 import { SupportedLanguages, TRANSLATIONS } from './translations';
@@ -342,21 +341,13 @@ export default function App() {
           </div>
         </section>
 
-        {/* Sections 2 to 6: Filosofi, Layanan, Portofolio, Jurnal, Kontak */}
+        {/* Sections 2 to 4: Studio, Process, Work */}
         <PortfolioSections
           scrollProgress={scrollProgress}
           lang={lang}
           activeBgIndex={activeBgIndex}
           onBgChange={setActiveBgIndex}
         />
-
-        {/* Section 7: Forge Beyond (CTA concluding panel) */}
-        <section
-          id="cta-section"
-          className="w-full h-screen relative flex items-center justify-center border-t border-white/[0.04] bg-black/45 backdrop-blur-[1px]"
-        >
-          <CtaScene lang={lang} />
-        </section>
       </div>
     </div>
   );
